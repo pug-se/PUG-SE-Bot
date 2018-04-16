@@ -1,0 +1,12 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+
+[requires]
+python_version = "3.6"
+
+[packages]
+"c250ba9" = {path = "./thirdparty/GDGAjuBot"}
+
+[dev-packages]

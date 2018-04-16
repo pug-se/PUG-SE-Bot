@@ -1,0 +1,24 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "f947d5f53f139bf577a8dbd6f7e5afe0cee110ab687d1b57671de8c460d5c4a3"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.6"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.python.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "c250ba9": {
+            "path": "./thirdparty/GDGAjuBot"
+        }
+    },
+    "develop": {}
+}
