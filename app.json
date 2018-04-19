@@ -1,0 +1,33 @@
+{
+  "name": "PUG-Se Bot",
+  "description": "O PUG-SE Bot é um bot de Telegram com a função de atender ao grupo de usuários de Python de Sergipe",
+  "repository": "https://github.com/pug-se/PUG-SE-Bot",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["telegram", "bot", "python"],
+  "env": {
+    "TELEGRAM_TOKEN": {
+      "description": "Token da API para bots do Telegram."
+    },
+    "MEETUP_KEY": {
+      "description": "Chave da API do Meetup.com."
+    },
+    "GROUP_NAME": {
+      "description": "Nome do grupo no Meetup.com."
+    },
+    "URL_SHORTENER_KEY": {
+      "description": "Chave da API URL Shortener do Google.",
+      "required": false
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+   "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-python"
+    }
+  ]
+}
