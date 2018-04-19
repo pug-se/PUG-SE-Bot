@@ -1,0 +1,3 @@
+[submodule "GDGAjuBot"]
+	path = thirdparty/GDGAjuBot
+	url = https://github.com/wagnerluis1982/GDGAjuBot.git
