@@ -7,6 +7,6 @@ verify_ssl = true
 python_version = "3.6"
 
 [packages]
-"c250ba9" = {path = "./thirdparty/GDGAjuBot"}
+gdgajubot = {git = "https://github.com/pug-se/GDGAjuBot.git", editable = true}
 
 [dev-packages]
