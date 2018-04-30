@@ -1,4 +1,7 @@
+import logging
+
 import gdgajubot.bot
+from gdgajubot.decorators import command
 
 # hack to remove irrelevant easter eggs
 for egg_func in 'love_ruby', 'memory_java', 'easter_python':
@@ -7,4 +10,9 @@ for egg_func in 'love_ruby', 'memory_java', 'easter_python':
 
 # our own bot class
 class PugSeBot(gdgajubot.bot.GDGAjuBot):
-    pass
+    @command('/about')
+    def about(self, message):
+        logging.info("%s: %s", message.from_user.name, "/about")
+        response = "Este é o bot do Python User Group de Sergipe (PUG-SE). "
+        response += "Para saber mais ou contribuir: https://github.com/pug-se/PUG-SE-Bot"
+        self.bot.send_message(message.chat.id, response)
