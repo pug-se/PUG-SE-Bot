@@ -23,4 +23,4 @@ class PugSeBot(gdgajubot.bot.GDGAjuBot):
     @easter_egg(r"(?i)\bJAVA\b")
     def zen_for_java(self, message):
         logging.info("%s: %s", message.from_user.name, "zen for java")
-        message.reply_text(random.choice(zen4java))
+        message.reply_text(random.choice(zen4java), quote=False)
