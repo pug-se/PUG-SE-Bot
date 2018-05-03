@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "0ce9910e445c9d11375c47c949ee871630d4b51c15ed429d0f3b1cad54f7717c"
+            "sha256": "a58325efe8b7a774589f05a35a8e7bfd1977db761f87fd41ac2d7bfb12fc668a"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -60,7 +60,7 @@
         "gdgajubot": {
             "editable": true,
             "git": "https://github.com/pug-se/GDGAjuBot.git",
-            "ref": "1.6.1"
+            "ref": "1.6.1-0pugse"
         },
         "idna": {
             "hashes": [
