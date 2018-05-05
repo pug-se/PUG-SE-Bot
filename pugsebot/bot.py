@@ -4,7 +4,7 @@ import random
 import gdgajubot.bot
 from gdgajubot.decorators import *
 
-from pugsebot.resources import zen4java
+from pugsebot.resources import zen4java, zen4ruby, zen4weak
 
 # hack to remove irrelevant easter eggs
 for egg_func in 'love_ruby', 'memory_java', 'easter_python':
@@ -24,3 +24,13 @@ class PugSeBot(gdgajubot.bot.GDGAjuBot):
     def zen_for_java(self, message):
         logging.info("%s: %s", message.from_user.name, "zen for java")
         message.reply_text(random.choice(zen4java), quote=False)
+
+    @easter_egg(r"(?i)\bRUBY\b")
+    def zen_for_ruby(self, message):
+        logging.info("%s: %s", message.from_user.name, "zen for ruby")
+        message.reply_text(random.choice(zen4ruby), quote=False)
+
+    @easter_egg(r"(?i)\b(?:JS|JAVASCRIPT|PHP|PERL)\b")
+    def zen_for_weakly_typed(self, message):
+        logging.info("%s: %s", message.from_user.name, "zen for weakly typed")
+        message.reply_text(random.choice(zen4weak), quote=False)

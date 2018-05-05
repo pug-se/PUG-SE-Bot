@@ -20,5 +20,6 @@ ZEN_OF_PYTHON = (
     "Namespaces are one honking great idea -- let's do more of those!",
 )
 
-
 zen4java = ZEN_OF_PYTHON[0:7] + ZEN_OF_PYTHON[16:18]
+zen4ruby = (ZEN_OF_PYTHON[7], ZEN_OF_PYTHON[11], '\n'.join(ZEN_OF_PYTHON[12:14]))
+zen4weak = ('\n'.join(ZEN_OF_PYTHON[9:11]),)
