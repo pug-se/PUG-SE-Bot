@@ -7,6 +7,6 @@ verify_ssl = true
 python_version = "3.6"
 
 [packages]
-gdgajubot = {git = "https://github.com/pug-se/GDGAjuBot.git", ref = "1.6.1-0pugse", editable = true}
+gdgajubot = {git = "https://github.com/pug-se/GDGAjuBot.git", ref = "master", editable = true}
 
 [dev-packages]
