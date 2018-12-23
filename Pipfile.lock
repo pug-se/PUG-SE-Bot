@@ -60,7 +60,7 @@
         "gdgajubot": {
             "editable": true,
             "git": "https://github.com/pug-se/GDGAjuBot.git",
-            "ref": "490cb16bd6090f61ee37b5827461e202118427a7"
+            "ref": "e5cbc597f4084127400b29804d320e4be5a2e457"
         },
         "idna": {
             "hashes": [
