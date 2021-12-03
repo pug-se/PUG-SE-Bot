@@ -25,9 +25,12 @@
       "size": "free"
     }
   },
-   "buildpacks": [
+  "buildpacks": [
     {
-      "url": "https://github.com/heroku/heroku-buildpack-python"
+      "url": "https://github.com/moneymeets/python-poetry-buildpack.git"
+    },
+    {
+      "url": "heroku/python"
     }
   ]
 }

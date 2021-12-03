@@ -1,1 +1,1 @@
-worker: python -m pugsebot.cli
+worker: ./scripts/heroku-worker.sh
