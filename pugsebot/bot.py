@@ -23,14 +23,17 @@ class PugSeBot(gdgajubot.bot.GDGAjuBot):
     @easter_egg(r"(?i)\bJAVA\b")
     def zen_for_java(self, message):
         logging.info("%s: %s", message.from_user.name, "zen for java")
-        message.reply_text(random.choice(zen4java), quote=False)
+        message.reply_html("What I can say about Java 🙄\n\n"
+                           "<b>%s</b>" % random.choice(zen4java), quote=False)
 
     @easter_egg(r"(?i)\bRUBY\b")
     def zen_for_ruby(self, message):
         logging.info("%s: %s", message.from_user.name, "zen for ruby")
-        message.reply_text(random.choice(zen4ruby), quote=False)
+        message.reply_html("💎 I have a zen for you, my Ruby!\n\n"
+                           "<b>%s</b>" % random.choice(zen4ruby), quote=False)
 
     @easter_egg(r"(?i)\b(?:JS|JAVASCRIPT|PHP|PERL)\b")
     def zen_for_weakly_typed(self, message):
         logging.info("%s: %s", message.from_user.name, "zen for weakly typed")
-        message.reply_text(random.choice(zen4weak), quote=False)
+        message.reply_html("For those about weak, a zen for you 🎸\n\n"
+                           "<b>%s</b>" % random.choice(zen4weak), quote=False)
